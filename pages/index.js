@@ -58,8 +58,8 @@ export default function Home() {
       {HomePages.map((p, i) => (
         <>
             <div className="col-lg-5 col-md-4 col-sm-6">
-              <div className="card">
-                <div className="text-danger card-text px-2">
+              <div className="card h-100">
+                <div className="card-header">
                   <h3>{p.title}</h3>
                 </div>
                 <div className="card-body">

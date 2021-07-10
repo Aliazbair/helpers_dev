@@ -4,34 +4,42 @@ const Linkes = [
   {
     name: "Home",
     url: "/",
+    icon: "bi bi-house text-info",
   },
   {
     name: "Colors",
     url: "/color",
+    icon: "bi bi-palette text-info",
   },
   {
     name: "Icons",
     url: "/icon",
+    icon:'bi bi-book text-info'
   },
   {
     name: "Images",
     url: "/image",
+    icon:'bi bi-image text-info'
   },
   {
     name: "Fonts",
     url: "/fonts",
+    icon:'bi bi-fonts text-info'
   },
   {
     name: "Logo",
     url: "/logo",
+    icon:'bi bi-badge-wc text-info'
   },
   {
     name: "UI",
     url: "/ui",
+    icon:'bi bi-ui text-info'
   },
   {
     name: "Videos",
     url: "/video",
+    icon:'bi bi-play-btn text-info'
   },
 ];
 
@@ -59,7 +67,7 @@ const Navbar = () => {
                 <li key={i} className="nav-item">
                   <Link href={link.url}>
                   <a className="nav-link">
-                    {link.name}
+                   <i className={link.icon}></i> {link.name}
                   </a>
 
                   </Link>

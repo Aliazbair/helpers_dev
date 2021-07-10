@@ -3,16 +3,19 @@ import {Logos} from '../data/logo';
 import Link from 'next/link'
 const logo = () => {
     return (
-      <div className='container'>
+      <div className="container">
         <Meta title="Logos" />
         <Header title="Logos" description="Resources for Logos" />
 
-        <div className='row g-2'>
+        <div className="row g-2">
           {Logos.map((logo) => (
             <div className="col-lg-4 col-md-6">
-              <div className="card h-100">
-                <div className="text-info card-text px-2">
-                  <h3>{logo.title}</h3>
+              <div className="card h-100 bg-dark text-light">
+                <div className="card-header">
+                  <h3 className="card-title text-muted">
+                    <i className="bi bi-badge-wc text-info p-2"></i>
+                    {logo.title}
+                  </h3>
                 </div>
                 <div className="card-body">
                   <p>{logo.description}</p>
@@ -22,9 +25,9 @@ const logo = () => {
                   <Link href={logo.url}>
                     <a
                       target="_blank"
-                      className="btn btn-outline-primary w-100"
+                      className="btn btn-outline-warning w-100"
                     >
-                      Go to WebSite
+                      <i className="bi bi-globe"></i> Go to WebSite
                     </a>
                   </Link>
                 </div>

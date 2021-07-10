@@ -6,7 +6,8 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head />
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
-        <body>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"></link>
+        <body >
           <Main />
           <NextScript />
           <script src="/js/bootstrap.min.js"></script>
