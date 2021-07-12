@@ -49,7 +49,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div className="container">
           <Link href="/">
-            <a className="navbar-brand ">Helpers</a>
+            <a className="navbar-brand "><i className='bi bi-info-square-fill'></i> Helpers</a>
           </Link>
         
           <button
